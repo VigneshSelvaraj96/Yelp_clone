@@ -38,7 +38,7 @@ def homepage():
 def callingyelpapi():
     keyword = request.args.get('keyword')
     distancemeters = int(float(request.args.get('distancemeters')))
-    category = request.args.get('category')
+    category = request.args.get('categories')
     lat = request.args.get('lat')
     long = request.args.get('lng')
     url = 'https://api.yelp.com/v3/businesses/search?term={}&latitude={}&longitude={}&categories={}&radius={}'.format(keyword,lat,long,category,distancemeters)
