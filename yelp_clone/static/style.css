@@ -1,0 +1,290 @@
+body
+{
+    background-color: rgb(206, 206, 206);
+}
+
+.outercard{
+    width: 510px;
+    height: 492px;
+    background-color: grey;
+    margin: auto;
+}
+
+#results{
+    margin: auto;
+}
+
+.formcard{
+    width: 500px;
+    height: 480px;
+    border-style: solid;
+    border-color: grey;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    z-index: +1;
+    background-color: white;
+}
+
+.banner{
+    background-image:url('images/banner.jpeg');
+    background-repeat: no-repeat;
+    background-size:100% 255px;
+    background-position:bottom;
+    height: 100px;
+    width: 100%;
+    margin-top: 0px;
+    display:inline-block;
+}
+
+
+.formcontainer{
+    padding: 10px;
+}
+
+.forminputs{
+    padding: 10px;
+}
+
+.textinbanner
+{
+    color: white;
+    margin-left: 33px;
+    font-size: 17.5px;
+}
+
+#keyword{
+    width: 95%;
+    position: relative;
+    margin-top: 5px;
+}
+
+.required{
+    color: rgb(79, 79, 231);
+}
+
+.optional{
+    color: rgb(79, 79, 231);
+}
+
+.required::after{
+    content: "*";
+    color: red;
+}
+
+.opt1{
+    display: inline-block;
+    position: relative;
+}
+
+.opt2{
+    display: inline-block;
+    margin-left: 105px;
+}
+
+.inline{
+    margin-top: 25px;
+}
+
+.loc{
+    margin-top: 25px;
+}
+
+#Location{
+    width: 95%;
+    position: relative;
+    margin-top: 5px;
+}
+
+#distance{
+    margin-top: 5px;
+}
+
+#category{
+    margin-top: 5px;
+}
+
+
+#hrline{
+    width: 89%;
+    margin-top: 40px;
+    position: absolute;
+    background-color:  rgb(152, 152, 255);
+    height: 1px;
+}
+
+#text{
+    color: rgb(79, 79, 231);
+    display: block;
+    margin-top: 60px;
+}
+
+#autoloc{
+    margin-top: 10px;
+}
+
+#button1 {
+    padding:5px 15px; 
+    background:rgb(71, 123, 221); 
+    border:2px;
+    margin-right: 10px;
+    width: 80px;
+    color: white;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+#button2 {
+    padding:5px 15px; 
+    background:rgb(240, 148, 94); 
+    border:2px;
+    width: 80px;
+    color: white;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+#myrestable{
+    padding-top: 100px;
+    border: 2px;
+    display: none;
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+
+th{
+    background-color: rgb(134, 157, 223);
+}
+
+td,th{
+    height: 80px;
+    border: 2px solid rgb(153, 153, 153);
+    border-collapse: collapse;
+}
+
+.rowimages{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.busname{
+    text-align: center;
+    cursor: pointer;
+}
+
+.busrating{
+    text-align: center;
+}
+.busdistance{
+    text-align: center;
+}
+
+.busnum{
+    text-align: center;
+}
+
+#businessnametable, #ratingtable,#distancetable{
+    cursor: pointer;
+}
+
+#shadow2{
+    width: 810px;
+    height: 860px;
+    background-color: grey;
+    margin: auto;
+    display: none;
+    margin-top: 15px;
+}
+
+#businessinfocard{
+    width: 800px;
+    height: 850px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+.cardbody{
+    margin-left: 4%;
+}
+
+#cardbusname{
+    text-align: center;
+}
+
+.column1{
+    width: 400px;
+    float: left;
+    height: 100px;
+}
+
+.column2{
+    width: 300px;
+    float: right;
+    height: 100px;
+}
+
+.row1,.row2,.row3,.row4{
+    width: 800px;
+    height: 100px;
+}
+
+
+#photo1,#photo2,#photo3{
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+    margin: 20px;
+    margin-bottom: 0px;
+    border: 2px solid black;
+}
+
+#photo1num{
+    display: inline-block;
+    margin-left: 95px;
+    margin-top: -10px;
+    height: 20px;
+}
+
+#photo2num{
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: -10px;
+    height: 20px;
+}
+
+#photo3num{
+    display: inline-block;
+    margin-left: 190px;
+    margin-top: -10px;
+    height: 20px;
+}
+
+
+#opensign{
+    background-color: green;
+    width: 100px;
+    text-align: center;
+    border-radius: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+
+#closesign{
+    background-color: rgb(189, 0, 0);
+    width: 100px;
+    text-align: center;
+    border-radius: 30px;
+    height: 30px;
+    line-height: 30px;
+}

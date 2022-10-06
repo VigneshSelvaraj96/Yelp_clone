@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home page</title>
+        <link rel="stylesheet" href="/static/style.css">
+        <script type="text/javascript" src="/static/javascript.js"></script>
+    </head>
+    <body>
+        <div class = 'outercard'>
+            <div class="formcard"><div class = 'banner'><div class = 'textinbanner'><p>Business Search</p><p>Fill out the form to get businesses near you!</p></div></div>
+                <div class = 'formcontainer'>
+                    <div class = 'forminputs'>
+                        <form id="myform" action="/testing" method="get">
+                            <div class="required">Keyword</div>
+                            <input type="text" id="keyword" name="keyword" required>
+                            <div class = 'inline'>
+                                <div class = 'opt1'>
+                                    <div class = 'optional'>Distance(miles)</div>
+                                    <input type="text" id="distance" name="distance">
+                                    <input type = 'text' id = 'distancemeters' name = 'distancemeters' hidden>
+                                </div>
+                                <div class = 'opt2'>
+                                    <div class="required">Category</div>
+                                    <select name="category" id="category" required>
+                                        <option value="all">Default</option>
+                                        <option value="Arts and Entertainment">Arts and Entertainment</option>
+                                        <option value="Food">Food</option>
+                                        <option value="Hotels and Travel">Hotels and Travel</option>
+                                        <option value="Health and Medical">Health and Medical</option>
+                                        <option value="Professional Services">Professional Service</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="loc">
+                                <div class = 'required'>Location</div>
+                                <input type="text" id="Location" name="Location" required>
+                                <input type = 'text' name="lat" id="lat" hidden>
+                                <input type ='text' name="lng" id="lng" hidden>
+                            </div>
+                            <hr id="hrline">
+                            <div>
+                                <p id="text">Want us to auto-detect your location? Check here<input type="checkbox" id="autoloc" name="autoloc" value="0" onclick="resettextloc()"></p>
+                            </div>
+                            <div>
+                                <input type="submit" id="button1" value="SUBMIT"/><input type="button" id="button2" value="CLEAR" onclick="resetfields()">
+                            </div>
+                        </form>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="results">
+            <iframe id="i1" name="i1" style="display:none"></iframe>
+            <table id="myrestable">
+                <colgroup>
+                    <col span="1"width = 150px >
+                    <col span="1"width = 150px >
+                    <col span="1" width = 350px >
+                    <col span="1"width = 150px >
+                    <col span="1"width = 150px >
+                  </colgroup>
+                <thead>
+                <tr>
+                    <th id="numbertable">No.</th>
+                    <th id = 'imagetable'>Image</th>
+                    <th id = 'businessnametable' onclick="sortheading(2)">Business Name</th>
+                    <th id="ratingtable" onclick="sortheading(3)">Rating</th>
+                    <th id="distancetable" onclick = 'sortheading(4)'>Distance(miles)</th>
+                  </tr>
+                </thead>
+                <tbody id = 'tablebody'>
+                </tbody>
+            </table>
+            <div id="shadow2">
+            <div id = 'businessinfocard'style='display:none'>
+                <h1 id = 'cardbusname'>Name</h1>
+                <hr>
+                    <div class='cardbody'>
+                        <div class ='row1'>
+                            <div class="column1">
+                                <h1>Status</h1>
+                                <p id='buscardstatus'>some text</p>
+                            </div>
+                            <div id="catdisplay" class="column2">
+                                <h1>Category</h1>
+                                <p id="buscardcat">some text</p>
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div id="addressdisplay" class="column1">
+                                <h1>address</h1>
+                                <p id="buscardaddress">some text</p>
+                            </div>
+                            <div id="phonenumberdisplay" class="column2">
+                                <h1>Phone Number</h1>
+                                <p id="buscardphnumber" >some text</p>
+                            </div>
+                        </div>
+                        <div class="row3">
+                            <div id="transdisplay" class="column1">
+                                <h1>Transactions Supported</h1>
+                                <p id="buscardtrans">some text</p>
+                            </div>
+                            <div id="pricedisplay" class="column2">
+                                <h1>Price</h1>
+                                <p id="buscardprice" >some text</p>
+                            </div>
+                        </div>
+                        <div class="row4">
+                            <div id="moreinfodisplay" class="column1">
+                                <h1>More info</h1>
+                                <p id="buscardmoreinfo">some text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buscardphotos">
+                        <div id = 'photo1'>
+
+                        </div>
+                        <div id="photo2">
+
+                        </div>
+                        <div id="photo3">
+
+                        </div>
+                    </div>
+                    <div class = 'photonumbers'>
+                        <div id="photo1num">
+                            <p>Photo 1</p>
+                        </div>
+                        <div id="photo2num">
+                            <p>Photo 2</p>
+                        </div>
+                        <div id="photo3num">
+                            <p>Photo 3</p>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
