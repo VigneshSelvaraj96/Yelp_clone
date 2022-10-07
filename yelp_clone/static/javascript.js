@@ -1,7 +1,7 @@
 
-const geocodingapi = 'AIzaSyDslMovopJy3Ce_xno22aJT8nZgyGUQTXY'
-//const backendurl = 'http://127.0.0.1:8080'
-const backendurl = 'https://yelpcloneviggy.wl.r.appspot.com/'
+const geocodingapi = 'AIzaSyBoEzYKkDQnXkIkDcTpdycRsYlIgzEgz5E'
+const backendurl = 'http://127.0.0.1:8080'
+//const backendurl = 'https://yelpclonevignesh.wl.r.appspot.com/'
 var data
 var boolsubmit = false
 

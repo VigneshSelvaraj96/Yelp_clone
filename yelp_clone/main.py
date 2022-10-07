@@ -42,6 +42,7 @@ def callingyelpapi():
     lat = request.args.get('lat')
     long = request.args.get('lng')
     url = 'https://api.yelp.com/v3/businesses/search?term={}&latitude={}&longitude={}&categories={}&radius={}'.format(keyword,lat,long,category,distancemeters)
+    print(url)
     res = requests.get(url,headers=header).json()
     return (res)
 
