@@ -151,9 +151,8 @@ body
     padding-top: 100px;
     border: 2px;
     display: none;
-    width:70%; 
-    margin-left:15%; 
-    margin-right:15%;
+    max-width: fit-content;
+    margin: auto;
 }
 
 th{
