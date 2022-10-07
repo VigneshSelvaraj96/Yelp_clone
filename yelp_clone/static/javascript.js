@@ -1,16 +1,21 @@
 
 const geocodingapi = 'AIzaSyDslMovopJy3Ce_xno22aJT8nZgyGUQTXY'
-const backendurl = 'http://127.0.0.1:8080'
+//const backendurl = 'http://127.0.0.1:8080'
+const backendurl = 'https://yelpcloneviggy.wl.r.appspot.com/'
 var data
-
+var boolsubmit = false
 
 
 window.onload= function(){
     document.getElementById('myform').addEventListener('submit', async event => {
     event.preventDefault();
+    if(!boolsubmit)
+    {
     var jsondata = await querylocapi();
     if (jsondata.businesses.length == 0) emptyrecord();
     else buildtable(jsondata);
+    boolsubmit = !boolsubmit;
+    }
     });
 }
 
@@ -110,6 +115,7 @@ function resetfields(){
     document.getElementById('Location').disabled = false;
     document.getElementById('businessinfocard').style.display = 'none';
     document.getElementById('shadow2').style.display = 'none';
+    boolsubmit = false;
 
 }
 
