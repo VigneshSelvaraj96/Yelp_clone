@@ -25,7 +25,7 @@ function emptyrecord(){
   var pnode = document.createElement('p');
   pnode.id = 'noresp';
   results.insertBefore(pnode,document.getElementById('myrestable'));
-  document.getElementById('noresp').innerHTML= '<p> No records have been found </p>';
+  document.getElementById('noresp').innerHTML= '<h2> No records have been found </h2>';
   document.getElementById('myrestable').style.display='hidden';
 }
 

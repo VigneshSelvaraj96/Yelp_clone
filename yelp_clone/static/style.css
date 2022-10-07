@@ -164,6 +164,11 @@ td,th{
     border: 2px solid rgb(153, 153, 153);
     border-collapse: collapse;
 }
+#noresp{
+    margin: auto;
+    background-color: white;
+    width: fit-content;
+}
 
 .rowimages{
    height: 100%;
